@@ -1,0 +1,109 @@
+body {
+	width: 400px;
+	margin: 0 auto;
+	/*background-color: #eab2dc;*/
+}
+
+h2 {
+	font-family: 'Abril Fatface', cursive;
+	text-align: center;
+	font-size: 35px;
+}
+
+.parent {
+	text-align: center;
+	margin-top: 20px;
+	background-color: #eab2dc;
+}
+
+input {
+	margin-bottom: 20px;
+	display: block;
+}
+
+div {
+	border-left: 1px solid #ce50d8;
+	border-bottom: 1px solid #ce50d8;
+	width: 30%;
+	height: 110px;
+	display: inline-block;
+	float: left;
+	background-color: #eab2dc;
+	border-width: 5.5px;
+	font-size: 90px;
+	font-family: 'Mogra', cursive;
+	color: #921198;
+
+}
+
+/*div:hover {
+	background-color: #ad4492;
+}*/
+
+div:nth-child(1), :nth-child(4), :nth-child(7) {
+	border-left: none;
+}
+
+div:nth-child(7), :nth-child(8), :nth-child(9) {
+	border-bottom: none;
+}
+
+button {
+	padding: 15px 25px;
+	background: #800035;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+  /*margin-top: 30px;*/
+}
+
+span {
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+}
+
+p {
+	font-family: 'Mogra', cursive;
+	font-size: 30px;
+	display: inline;
+	margin: 20px;
+}
+
+.cross {
+	color: gray;
+	text-decoration: line-through;
+}
+
+p:nth-child(1) {
+	margin-right: 30px;
+}
+
+h3 {
+	font-family: 'Mogra', cursive;
+	font-size: 30px;
+	/*margin-bottom: 5px;*/
+	clear: both;
+}
+
+.winclass {
+	padding-top: 25px;
+	margin-bottom: 0px;
+
+}
+
+.timerclass {
+	margin-bottom: 0px;
+	margin-top: 3px;
+}
+
+#winCounter, #timer {
+	font-family: 'Mogra', cursive;
+	font-size: 23px;
+}
+
+
+
+

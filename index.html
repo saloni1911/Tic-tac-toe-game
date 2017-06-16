@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Revalia" rel="stylesheet">
+</head>
+
+<body>
+	<h2>Tic Tac Toe Game</h2>
+	
+	<p>Player 1: <span> X</span></p>
+	<p>Player 2: <span> O</span></p>
+
+	<section class="parent">
+			<div data-cell=1></div>
+			<div data-cell=2></div>
+			<div data-cell=3></div>
+
+			<div data-cell=4></div>
+			<div data-cell=5></div>
+			<div data-cell=6></div>
+		
+			<div data-cell=7></div>
+			<div data-cell=8></div>
+			<div data-cell=9></div>
+	</section><br>
+
+	<h3 class="winclass">Win Counter - <span id="winCounter">0 : 0</span></h3>
+	<h3 class="timerclass">Timer - <span id="timer">0</span></h3></br>
+
+	<button id="start">Start</button>
+	<button id="replay">Restart</button> 
+	<button id="setTimer">Set Timer</button>
+
+	<script src="tictac.js"></script>
+</body>
+</html>
