@@ -13,21 +13,43 @@ var arr = [0,1,2,3,4,5,6,7,8];
 var player1Wins = 0;
 var player2Wins = 0;
 
+var updateTime = function() {
+	if (seconds >= 1) {
+		seconds = seconds -= 1;
+		timer.textContent = seconds;	
+	}
+	if (seconds == 0) {
+		boolean = true;
+	}
+}
+
+setTimerBtn.addEventListener("click", function() {
+	seconds = prompt("Set time in seconds");
+	timer.textContent = seconds;
+});
+
+startbtn.addEventListener("click", function() {
+	clearInterval(timerId);
+	timerId = setInterval(updateTime, 1000);	
+});
 
 var restart = function() {
-clearInterval(timerId);
+	clearInterval(timerId);
+	if (seconds != 0) {
+		timerId = setInterval(updateTime, 1000);
+	}
 	boolean = false;
 	for (var i = 0; i < div.length; i++) {
 		div[i].textContent = "";
 	}
 	counter = 0;
 	arr = [0,1,2,3,4,5,6,7,8];
-}
+	}
 
 replay.addEventListener("click", restart);
 
 var winCounter = function(x) {
-	if (x == "X") {
+	 if (x == "X") {
 		player1Wins++;
 	} else {
 		player2Wins++;
@@ -78,25 +100,7 @@ var switchSymbol = function(event) {
 
 parent.addEventListener("click", switchSymbol);
 
-var updateTime = function() {
-	if (seconds >= 1) {
-		seconds = seconds -= 1;
-		timer.textContent = seconds;	
-	}
-	if (seconds == 0) {
-		boolean = true;
-	}
-}
 
-setTimerBtn.addEventListener("click", function() {
-	seconds = prompt("Set time in seconds");
-	timer.textContent = seconds;
-});
-
-startbtn.addEventListener("click", function() {
-	clearInterval(timerId);
-	timerId = setInterval(updateTime, 1000);	
-});
 
 
 
